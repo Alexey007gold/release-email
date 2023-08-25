@@ -1,4 +1,4 @@
-# release-email
+# Auto1 release-email
 
 ### Installation
   * Fetch or download repository (unarchived)
