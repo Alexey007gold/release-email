@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auto1 Release Email</title>
+    <script src="js/popup.js"></script>
+    <style>
+        body {
+            background-color: #204199;
+            color: white;
+            text-shadow: 0 0 5px black;
+        }
+
+        textarea, input {
+            background-color: #f58220;
+        }
+    </style>
+</head>
+<body>
+<h1>Auto1 Release Email</h1>
+<div>
+    <p>
+        <label for="recipients">Recipients:</label>
+        <input type="text" id="recipients"/>
+    </p>
+    <p>
+        <label for="su">Subject template:</label>
+        <textarea title="Placeholders like $repoName $tagName $changes are available here"
+                  rows="2" cols="70" id="su"></textarea>
+    </p>
+    <p>
+        <label for="body">Body template:</label>
+        <textarea title="Placeholders like $repoName $tagName $changes are available here"
+                  rows="5" cols="70" id="body"></textarea>
+    </p>
+    <p>
+        <label for="body">Google account number (Default 0)</label>
+        <input title="You can be logged in few account. Choose correct number of Auto1 account" type="number" id="acc"></input>
+    </p>
+    <p>
+        <button id="saveButton">Save</button>
+    </p>
+</div>
+
+</body>
+</html>
+

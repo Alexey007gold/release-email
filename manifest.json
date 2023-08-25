@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Auto1 Release Email",
+  "version": "1.0.2",
+  "description": "An extension to prepare draft Email for release from github tag page",
+  "author": "dmytro.polishchuk@auto1.com",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_title": "Click to view a settings",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/wkda/*/releases/tag/*"
+      ],
+      "js": [
+        "js/content.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "images/icon48.png"
+      ],
+      "matches": [
+        "https://github.com/*"
+      ]
+    }
+  ]
+}
