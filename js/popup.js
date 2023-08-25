@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const acc = accInput.value;
         chrome.storage.sync.set({recipients: recipients, suTemplate: su, bodyTemplate: body, acc: acc}, function () {
             console.log('Settings saved!');
+            window.close();
         });
     });
 });
