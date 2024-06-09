@@ -19,7 +19,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://github.com/wkda/*/releases/tag/*"
+        "https://github.com/*"
       ],
       "js": [
         "js/content.js"
